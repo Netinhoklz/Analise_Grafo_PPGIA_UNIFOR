@@ -4,7 +4,7 @@
 - **Matrícula:** 2519203
 
 ## 1. Introdução e Objetivos
-
+![baixados](https://github.com/user-attachments/assets/4ec406d8-4b2e-4a5d-a956-14ca590b5681)
 Este trabalho tem como objetivo principal a análise de um grafo de coautoria científica, construído a partir de publicações relacionadas ao PPGIA UNIFOR. A análise envolve a coleta e preparação dos dados, a construção do grafo, o cálculo de diversas medidas de centralidade e a interpretação dos resultados para identificar os pesquisadores mais influentes ou centrais na rede de colaboração.
 
 ## 2. Metodologia
@@ -37,7 +37,7 @@ Os dados de publicações científicas foram coletados a partir de uma busca no 
         *   Agrupar (somar as colaborações) de autores cujos nomes se tornaram idênticos após a normalização.
     *   Um tratamento adicional foi realizado em um loop para nomes no formato "NOME_AUTOR - NOME_REVISTA...", extraindo apenas o nome do autor e agregando suas colaborações.
     *   Duplicatas de linhas/colunas (nomes de autores) resultantes da normalização foram tratadas, mantendo a primeira ocorrência e somando os valores, com avisos caso os dados fossem conflitantes.
-   ![baixados](https://github.com/user-attachments/assets/4ec406d8-4b2e-4a5d-a956-14ca590b5681)
+   
 
 4.  **Reconstrução do Grafo**: A matriz de adjacência, agora limpa e normalizada, foi usada para reconstruir o grafo final de colaboração utilizando `networkx`.
 
