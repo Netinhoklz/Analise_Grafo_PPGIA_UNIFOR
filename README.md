@@ -37,6 +37,8 @@ Os dados de publicações científicas foram coletados a partir de uma busca no 
         *   Agrupar (somar as colaborações) de autores cujos nomes se tornaram idênticos após a normalização.
     *   Um tratamento adicional foi realizado em um loop para nomes no formato "NOME_AUTOR - NOME_REVISTA...", extraindo apenas o nome do autor e agregando suas colaborações.
     *   Duplicatas de linhas/colunas (nomes de autores) resultantes da normalização foram tratadas, mantendo a primeira ocorrência e somando os valores, com avisos caso os dados fossem conflitantes.
+   ![baixados](https://github.com/user-attachments/assets/4ec406d8-4b2e-4a5d-a956-14ca590b5681)
+
 4.  **Reconstrução do Grafo**: A matriz de adjacência, agora limpa e normalizada, foi usada para reconstruir o grafo final de colaboração utilizando `networkx`.
 
 Após o pré-processamento, o grafo resultante continha **239 nós (autores)** e **267 arestas (colaborações)**.
