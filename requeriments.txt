@@ -1,0 +1,9 @@
+# requirements.txt
+
+# Core libraries for data manipulation and graph analysis
+numpy
+pandas
+networkx
+
+# Plotting library
+matplotlib
